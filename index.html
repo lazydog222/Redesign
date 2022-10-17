@@ -1,0 +1,193 @@
+<!-- The code in this HTML file was based off of Jeff's video on bootstrap! 
+    Here is the link: https://www.youtube.com/watch?v=6Df6xbs5m8A&ab_channel=JeffHuang -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <title>Redesign Web Page</title>
+</head>
+<body>
+    <!-- nav-bar style from https://getbootstrap.com/docs/4.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg p-3 navbar-custom">
+        <a class="navbar-brand" href="#">Project Gutenberg</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">About Project Gutenberg</a>
+                <a class="dropdown-item" href="#">Collection Development</a>
+                <a class="dropdown-item" href="#">Contact Us</a>
+                <a class="dropdown-item" href="#">History and Philosophy</a>
+                <a class="dropdown-item" href="#">Permissions and License</a>
+                <a class="dropdown-item" href="#">Privacy Policy</a>
+                <a class="dropdown-item" href="#">Terms of Use</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Browse
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Book Search</a>
+                  <a class="dropdown-item" href="#">Bookshelves</a>
+                  <a class="dropdown-item" href="#">Frequently Downloaded</a>
+                  <a class="dropdown-item" href="#">Offline Cataloges</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">All help topics</a>
+                  <a class="dropdown-item" href="#">Copyright Procedures</a>
+                  <a class="dropdown-item" href="#">Errata, Fixes and Bug Reports</a>
+                  <a class="dropdown-item" href="#">File Formats</a>
+                  <a class="dropdown-item" href="#">Frequently Asked Questions</a>
+                  <a class="dropdown-item" href="#">Policies</a>
+                  <a class="dropdown-item" href="#">Public Domain eBook Submission</a>
+                  <a class="dropdown-item" href="#">Submitting Your Own Work</a>
+                  <a class="dropdown-item" href="#">Tablets, Phones, and eReaders</a>
+                  <a class="dropdown-item" href="#">The Attic</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Donate</a>
+            </li>
+          </ul>
+            <form class="form-inline p-2">
+                <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Search for Books" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Go</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class = "p-3">
+        <a href="#"> Books</a> >
+        <a href="#"> Great Novelists</a> >
+        <a href="#"> George Eliot</a> >
+        <a href="#"> Middlemarch</a>
+    </div>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-4 text-center pt-5">
+                <img src = "images/middlemarch.jpg" class="shadow-lg">
+            </div>
+            <div class = "col-md-8 pt-5">
+                <div class = "flex-column">
+                    <h1> Middlemarch</h1>
+                    <h3> By George Eliot </h3>
+                    <p> A triumph of realist fiction, George Eliot’s Middlemarch: A Study of Provincial 
+                    Life explores a fictional nineteenth-century Midlands town in the midst of 
+                    sweeping change. The proposed Reform Bill, the new railroads, and scientific 
+                    advances are threatening upheaval on every front. Against this backdrop, the 
+                    quiet drama of ordinary lives is played out by the novel’s complexly portrayed 
+                    characters—until the arrival of two outsiders further disrupts the town’s equilibrium. 
+                    Every bit as powerful and perceptive in our time as it was in the Victorian era, 
+                    Middlemarch displays George Eliot’s clear-eyed yet humane understanding of characters 
+                    caught up in the mysterious unfolding of self-knowledge. </p>
+                </div>
+                <div class = "container">
+                    <form class ="form">
+                        <div class="form-group row">
+                            <select class="form-control-sm w-50" id = "filetype">
+                                <option>HTML</option>
+                                <option>EPUB3</option>
+                                <option>Kindle</option>
+                                <option>Plain Text</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <button type="submit" class="btn btn-dark my-1 w-50">Download Book</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>      
+    </div>
+    <hr>
+    <div class = "container p-2">
+        <h5> Bibliographic Record </h5>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Author: Eliot, George, 1819-1880</li>
+            <li class="list-group-item">Title: Middlemarch</li>
+            <li class="list-group-item">Language: English</li>
+            <li class="list-group-item">Subjects:
+                <a href="#">Didcactic fiction</a>,
+                <a href="#">City and town life</a>,
+                <a href="#">English fiction</a>,
+                <a href="#">Young women fiction</a>,
+                <a href="#">Love stories</a>,
+                <a href="#">Domestic fiction</a>,
+                <a href="#">Married people fiction</a>,
+                <a href="#">Bildungsromans</a>,
+            </li>
+            <li class="list-group-item">Category: Text</li>
+            <li class="list-group-item">EBook-Number: 145</li>
+            <li class="list-group-item">Release Date: July 1, 1994</li>
+            <li class="list-group-item">Copyright Status: Public domain in the USA.</li>
+        </ul>
+    </div>
+    <div class = "container p-2">
+        <h5 class = "pb-2"> Similar Titles </h1>
+        <div class = "row">
+            <div class = "col-md">
+                <figure class = "text-center">
+                    <img src = "images/1.jpg" class = "shadow-lg">
+                    <figcaption><b>Little Women</b></figcaption>
+                </figure>
+            </div>
+            <div class = "col-md">
+                <figure class = "text-center">
+                    <img src = "images/2.jpg" class = "shadow-lg">
+                    <figcaption><b>Sons and Lovers</b></figcaption>
+                </figure>
+            </div>
+            <div class = "col-md">
+                <figure class = "text-center">
+                    <img src = "images/3.jpg" class = "shadow-lg">
+                    <figcaption><b>Emma</b></figcaption>
+                </figure>
+            </div>
+            <div class = "col-md">
+                <figure class = "text-center">
+                    <img src = "images/4.jpg" class = "shadow-lg">
+                    <figcaption><b>A Room with a View</b></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 navbar-custom text-white-50">
+        <div class="d-flex justify-content-around">
+            <div>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="#">About Project Gutenberg</a>
+            </div>
+            <div>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div>
+                <a href="#">Contact Information</a>
+            </div>
+            <div>
+                <a href="#">Get Help</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
